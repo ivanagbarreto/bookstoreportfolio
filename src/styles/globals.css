@@ -1,0 +1,471 @@
+
+/*************  CUSTOM PROPERTIES *************/
+:root {
+      --first-color: #319FA5 ;
+      --white-color: #FFFFFF;
+      --gray-light-color: #6E6E6E ;
+      
+}
+/*************  RESET *************/
+
+*{    
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+html{
+      font-size: 16px;
+}
+body {
+      margin:0;
+      overflow-x: hidden;
+      color: var(--white-color);
+}
+/*************  SHOPPING-CART  ***********/
+
+
+  /* boton de limpiar carrito */
+.buttonclear {  height: 1.56rem;
+            width: 9.37rem;
+            margin: 15px;
+            background-color: var(--first-color);
+            color: var(--white-color);
+            border: none;
+            border-radius: .5rem;
+            box-shadow: 2px 2px 2px black;
+            padding: 4px;
+         
+           
+      }
+      
+        /* producto a comprar */
+
+        .cardContainer1 { display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 5rem;
+            padding-bottom: 6rem;
+            padding-left:1.4rem;
+            padding-right: 5rem;
+            background-color: #f7f7f7;
+            align-items: center;
+        }
+
+        
+  
+
+     
+                          
+
+
+    
+/***   carrito desplegable   ***/
+
+.dropContainerGeneral {position: absolute;
+      right: 1rem;
+      top: 4.5rem
+      
+ }
+
+.dropContainer{ display: flex;
+     justify-content:flex-end;
+    
+}
+
+.dropdown {
+      display: 
+       inline-block ;
+  
+  }
+
+  .cartImage { width: 3.25rem;
+      cursor: pointer;
+      position:relative;
+
+    
+      
+  }
+
+  /* Estilos para el contenido desplegable */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      margin-left: -35.62rem; 
+      border-radius: 0.94rem;
+      background-color:#eaeaea;   
+      width: 38rem;
+      box-shadow: 2px 8px 16px var(--first-color);
+      z-index: 1;  
+  }
+  
+
+  /* Mostrar el menú desplegable cuando se pasa el cursor sobre el botón */
+  .dropdown:hover .dropdown-content {
+      display:block;
+    
+  }
+ 
+
+
+  .cartAcumulador { position: relative;
+                  left: 1rem;
+                  width: 1.25rem;
+                  height: 1.37rem;
+            background-color: red;
+            font-size: medium;
+            color: var(--white-color);
+            border-radius: 1.25rem;
+            text-align: center;
+            z-index: 1;
+            
+;}
+
+.productContainer {display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     
+
+     
+}
+.acumuladorContainer {display: flex;
+justify-content: center;
+margin: 15px}
+
+.carritOscuro {margin-left: 0.62rem;}
+
+.carouselContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 5rem;
+}
+
+
+/* Estilos en modo tablet */
+@media only screen and (min-width: 36.25rem) and (max-width:51.8rem) {
+      .dropContainerGeneral {position: absolute;
+            right: 1rem;
+            top: 4.5rem;
+}
+
+
+.dropdown-content { width: 30rem;
+      margin-left: -27.5rem; 
+}
+
+
+}
+/*Estilos en modo mobile*/
+@media only screen and (max-width: 36.25rem) {
+      .dropContainerGeneral {position: absolute;
+            right: 0.2rem;
+            top: 6rem
+}
+.productContainer {margin-left: 5rem;
+                   margin-right: 5rem;}
+
+.dropdown-content { width: 22rem;
+      margin-left: -20rem; 
+;}
+.cardContainer1 {position: absolute;
+      top: 170rem ;}      
+      
+.carouselContainer {
+      position: absolute;
+      top:340rem;
+      left: 6rem;}
+}
+
+
+/*************  CARDS INFO  *************/
+@media only screen and (max-width:770px) {
+      .cards-container-info {
+        flex-direction: column;
+        align-items: center; 
+      }
+    }
+ 
+    
+
+
+/* Header*/
+.barra-promo {background-color: var(--gray-light-color);
+      padding-left:1rem;
+      padding-right:1rem;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      color: var(--white-color);
+      display: flex;
+      flex-direction: row;
+    
+}
+
+.Navbar {padding-top: 1rem;
+padding-left:1rem ;
+background-color: #EAEAEA;
+padding-bottom: 1rem;
+padding-right: 1rem;
+display:flex;
+align-items: center;
+justify-content: space-between;
+   
+}
+
+@media only screen and (max-width:770px)
+ {.Navbar {
+      justify-content: unset;
+      align-items: unset;
+      flex-direction:column;
+ }
+      
+}
+
+.Buscador {border-width:2px;
+border-radius:15px;
+border-style: solid;
+border-color: var(--gray-light-color);
+width: 200px;
+height: 30px;
+display:flex;
+align-items: center;
+padding-right:8px ;
+padding-left: 8px;}
+
+.Barrabusqueda {border:none;
+background-color:transparent;}
+
+.Menu {background-color: var(--first-color);
+display: flex;
+padding-left: 2rem ;
+padding-top:0.5rem ;
+padding-bottom:0.5rem ;}
+
+.SideBarMenu {
+      display: flex;
+      flex-direction: column;
+      padding-top:1rem ;
+     }
+.SideBarMenu a{
+      margin-bottom: 1rem;
+      font-size: 20px;
+}
+      
+
+.link-menu {color: var(--white-color);
+padding-right: 1rem;
+text-decoration: none ;
+font-weight: 400;}
+
+.menuMobile {display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+@media only screen and (max-width:770px)
+ {.imagenLogo{align-self: center;}
+      
+}
+.carritoOscuro {
+      margin-left: 0.5rem;
+}
+.SideBar {
+      width: 72vw;
+      height: 93vh;
+      background-color: var(--first-color);
+      position: absolute;
+      padding-left:1rem;
+      padding-top:3rem;
+
+}
+.MenuHambuerguesaSideBar {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+}
+.carritoSideBar {
+      margin-left: 0.7rem;
+    
+}
+
+
+/******* Estilos Carousel*******/
+.estiloImagen {
+  height: 31rem;
+  margin: auto;
+}    
+.contenedor{
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: auto;   
+} 
+
+.estiloTitulo {
+  padding-top: 130px;
+}
+
+/******************FOOTER******************/
+
+.footer {
+      width: 100%;
+      background-color: var(--first-color);
+      display: grid;
+      grid-template-areas: "grupo1 grupo2 grupo3"
+            "grupo1 grupo2 grupo3"
+            "grupo4 grupo4 grupo4";
+      grid-template-rows: 3fr;
+      grid-template-columns: 1fr;
+      padding-top: 40px;
+      padding-left: 8%;
+      padding-right:50px;
+}
+
+.footer img {
+      width: 60px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+}
+
+.derechos {
+      width: 400px;
+      padding-right: 40px;
+}
+
+.logo img {
+      background-color: var(--white-color);
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 1px 1px 5px black;
+}
+
+
+.date ul li {
+      list-style: none;
+      color: black(181, 236, 218);
+}
+
+.grupo1 {
+      color: black;
+      padding-left: 30px;
+      text-align: center;
+}
+.grupo3 img {
+      width: 40px;
+}
+.grupo2 {
+      color: black;
+      padding-left: 26%;
+      padding-right: 28%;
+      padding-top: 20px;
+      text-align: center;
+}
+
+.grupo3 {
+      padding-top: 20px;
+      padding-right: 110px;
+}
+.Payments {
+      padding-top: 40px;
+}
+
+.grupo1 h2 {
+      font-size: 19px;
+ }
+ .grupo2 h2 {
+      font-size: 19px;
+ }
+ .grupo3 h2 {
+      font-size: 19px;
+ }
+.red-social img {
+      transition: all;
+}
+
+.red-social img:hover {
+      color: black;
+      transform: scale(1.2)
+}
+
+
+/*  estilos footer modo mobile  */
+@media only screen and (max-width: 36.25rem) {
+      .footer { display:flex;
+           flex-direction: column;
+           align-items: center;
+           position: absolute;
+           top: 430rem;}
+
+.contenedor {
+      padding-bottom: 5rem;
+}          
+
+.logo img {
+      background-color: var(--white-color);
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 1px 1px 5px black;
+      margin-right: 20px;
+      margin-bottom: 20px;}
+
+.date ul li {
+      list-style: none;
+      color: black(181, 236, 218);
+      margin-right: 10px;}  
+      
+ .date { margin-right: 45px;
+      margin-top: 20px;
+      margin-bottom: 20px;}     
+
+.grupo3 {
+      margin-left: 100px;
+      margin-bottom: 20px;}
+
+.grupo4 {
+      color: black;
+      width: 100%;
+      position: relative;
+      bottom: 2px;
+      left: 0%;
+      text-align: center}
+}
+
+
+
+/*  estilos footer modo tablet  */
+@media only screen and (max-width:800px) {
+      .footer { display:flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 430rem;}
+ 
+ .logo img {
+       background-color: var(--white-color);
+       width: 250px;
+       border-radius: 8px;
+       box-shadow: 1px 1px 5px black;
+       margin-right: 20px;
+       margin-bottom: 20px;}
+ 
+ .date ul li {
+       list-style: none;
+       color: black(181, 236, 218);
+       margin-right: 10px;}  
+       
+  .date { margin-right: 45px;
+       margin-top: 20px;
+       margin-bottom: 20px;}     
+ 
+ .grupo3 {
+       margin-left: 100px;
+       margin-bottom: 20px;}
+ 
+ .grupo4 {
+       color: black;
+       width: 100%;
+       position: relative;
+       bottom: 2px;
+       left: 0%;
+       text-align: center} 
+}
