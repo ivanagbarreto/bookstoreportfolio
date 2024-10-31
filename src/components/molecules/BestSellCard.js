@@ -6,7 +6,7 @@ const BestSellCard = ({data}) => {
     return (
         <>
             <figure>
-                <Image src={img} alt={title} width={200} height={200} />
+                <Image src={img} alt={title} width={210} height={290} />
                 <figcaption>
                     <h3> # {id}</h3>
                     <h3>{title}</h3>

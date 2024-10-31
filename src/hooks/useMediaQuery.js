@@ -8,14 +8,14 @@ const useMediaQuery = (width) => {
     }, []);
 
     useEffect(() => {
-        const media = window.matchMedia(`(max-width: ${width}px}`);
+        const media = window.matchMedia(`(max-width: ${width}px)`);
         media.addEventListener('change', updateTarget);
 
-        // Inicializa el estado basado en la condición actual
+       
         setTargetReached(media.matches);
 
         return () => media.removeEventListener('change', updateTarget);
-    }, [updateTarget, width]); // Agrega updateTarget y width aquí
+    }, [updateTarget, width]); 
 
     return targetReached;
 }

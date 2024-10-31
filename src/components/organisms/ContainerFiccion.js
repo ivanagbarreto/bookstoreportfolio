@@ -26,7 +26,7 @@ const Proplibros = [
 const ContainerFiccion = () => {
   return (
     <>
-      <div>
+      <div style={{ position: "absolute", top: 0, left: 0, minHeight: "100vh", width: "100vw", backgroundColor: "#f7f7f7" }}>
         <GrayCard/>
 
         {Proplibros.map((Proplibros) => (
@@ -44,6 +44,7 @@ const ContainerFiccion = () => {
           height:400px;
           width: 100vw;
           align-items: center;
+           
         }
       `}</style>
     </>

@@ -31,7 +31,7 @@ const closeSideBar=()=>{
       <div className="menuMobile">
         {ismobile &&(
           <div onClick={()=>setIsSideBarOpen(true)}>
-          <Image
+          <Image 
           src="/hamburguesa_verde.png"
           width={50}
           height={33}
@@ -53,18 +53,20 @@ const closeSideBar=()=>{
  
     {!ismobile && (
       <div>
-       <Image
-       src="/iconos.png"
-       width={103}
-       height={54}
-       alt="Logo Books"
-       />
+       
        <Image
        src="/carrito.b.png"
        width={52}
        height={52}
        alt="Logo Books"
        className="carritOscuro"
+       
+       />
+       <Image
+       src="/iconos.png"
+       width={103}
+       height={54}
+       alt="Logo Books"
        />
        </div>
     )}

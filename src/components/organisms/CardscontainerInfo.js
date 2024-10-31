@@ -46,7 +46,7 @@ const CardscontainerInfo = () => {
       justify-content:center;
       padding: 10px; 
     }
-
+      
 
 
     @media only screen and (max-width: 800px){
@@ -54,7 +54,9 @@ const CardscontainerInfo = () => {
         grid-template-columns: 1fr;
       }
 
-
+       .cards-container-info :nth-child(3) {
+          margin-left: -60px;
+        }
     }
     
     `}</style>

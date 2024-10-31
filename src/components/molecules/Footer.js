@@ -55,6 +55,30 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+
+        
+
+
+
+
+            <style jsx>{`
+                
+
+                @media only screen and (max-width: 36.25rem) {
+                    footer {
+                        margin-top:-400px;
+                    }
+                }
+
+               
+            `}</style>
+
+
+
+
+
+
+
         </>
     );
 };

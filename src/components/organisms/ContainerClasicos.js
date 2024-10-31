@@ -1,4 +1,3 @@
-
 import Card from "@/components/molecules/BasicCard";
 import WhiteCard from "@/components/molecules/WhiteCard";
 
@@ -7,7 +6,7 @@ const Proplibros = [
     id: 1,
     img: "https://images.cdn1.buscalibre.com/fit-in/360x360/b0/39/b039af065268818b7bd3b0e016f8db65.jpg",
     title: "1984",
-    price:  14.670,
+    price: 14.670,
   },
   {
     id: 2,
@@ -19,32 +18,40 @@ const Proplibros = [
     id: 3,
     img: "https://quelibroleo.com/images/libros/libro_1362370739.png",
     title: "Crimen y Castigo",
-    price:   9.770,
+    price: 9.770,
   },
 ];
 
 const ContainerClasicos = () => {
   return (
     <>
-      <div>
+      <div className="container">
         <WhiteCard />
-
-        {Proplibros.map((Proplibros) => (
-          <Card key={Proplibros.id} data={Proplibros }  />
+        {Proplibros.map((propLibro) => (
+          <Card key={propLibro.id} data={propLibro} />
         ))}
       </div>
 
       <style jsx>{`
-        div {
+        .container {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
           align-content: center;
           background-color: white;
-          height:400px;
+          height: 100vh;
           width: 100vw;
-          align-items: center
-      
+          align-items: center;
+        }
+
+        @media only screen and (max-width: 36.25rem) {
+          .container {
+            flex-direction: column;
+            align-items: center; /* Alinea los elementos en el centro */
+          }
+          .container > :global(Card) {
+            margin-bottom: 20px; /* Espaciado entre las tarjetas */
+          }
         }
       `}</style>
     </>

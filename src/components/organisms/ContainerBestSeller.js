@@ -80,6 +80,7 @@ const ContainerBestSeller = () => {
         div { 
           position: absolute;
           top: 100rem;
+          margin-top: 100px;
          }
 
          figure {

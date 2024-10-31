@@ -6,7 +6,7 @@ const BasicCard = ({ data, addToCart }) => {
   return (
     <>
       <figure>
-        <Image src={img} alt={title} width={220} height={320} layout="responsive" />
+        <Image src={img} alt={title} width={220} height={320} layout="responsive" style={{ marginBottom: "30px" }}/>
         <figcaption>
           <h3>{title}</h3>
           <p>{autor}</p>
@@ -30,13 +30,14 @@ const BasicCard = ({ data, addToCart }) => {
           margin-left: 60px;
           margin-right: 20px;
           margin-top: 20px;
-          margin-bottom: 20px;
+          margin-bottom: 200px;
         }
         h3 {
           font-size: 1rem;
           line-height: 1;
           text-align: center;
           padding-top: 0.3rem;
+          margin top:50px;
         }
         p {
           line-height: 1;
@@ -47,6 +48,7 @@ const BasicCard = ({ data, addToCart }) => {
           justify-content: center;
           align-items: center;
           display: inline-block;
+          
         }
       `}</style>
     </>
