@@ -62,12 +62,7 @@ const closeSideBar=()=>{
        className="carritOscuro"
        
        />
-       <Image
-       src="/iconos.png"
-       width={103}
-       height={54}
-       alt="Logo Books"
-       />
+     
        </div>
     )}
     </div>

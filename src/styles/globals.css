@@ -198,6 +198,7 @@ margin: 15px}
       color: var(--white-color);
       display: flex;
       flex-direction: row;
+      width: 100%;
     
 }
 
