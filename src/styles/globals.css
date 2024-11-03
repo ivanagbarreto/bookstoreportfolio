@@ -198,7 +198,7 @@ margin: 15px}
       color: var(--white-color);
       display: flex;
       flex-direction: row;
-      width: 100%;
+      
     
 }
 
@@ -291,7 +291,7 @@ justify-content: space-between;
     .imagenLogo{
       display: none;
     }
-
+  
 }
 .carritoOscuro {
       margin-left: 0.5rem;
@@ -307,7 +307,8 @@ justify-content: space-between;
       position: absolute;
       padding-left:1rem;
       padding-top:3rem;
-
+      
+      z-index: 1000;
 }
 .MenuHambuerguesaSideBar {
       margin-top: 1.5rem;
