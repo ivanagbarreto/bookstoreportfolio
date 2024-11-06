@@ -6,7 +6,7 @@ const BestSellCard = ({data}) => {
     return (
         <>
             <figure>
-                <Image src={img} alt={title} width={210} height={290} />
+                <Image src={img} alt={title} width={110} height={180} style={{ marginTop: '10px' }}/>
                 <figcaption>
                     <h3> # {id}</h3>
                     <h3>{title}</h3>
@@ -16,6 +16,7 @@ const BestSellCard = ({data}) => {
 
             <style jsx>{`
                 figure {
+                 padding-top:0;
                     height: 290px;
                     width: 210px;
                     border: 0.1px solid black;
@@ -23,6 +24,7 @@ const BestSellCard = ({data}) => {
                     background-color: white;
                     box-shadow: 3px 6px 20px;
                     display: flex;
+                     align-items: center; 
                     flex-direction: column;
                 }
 
@@ -58,6 +60,9 @@ const BestSellCard = ({data}) => {
                         margin-top: 20px;
                         margin-bottom: 20px;
                     }
+                        img{
+                        height:50%
+                        width:50%}
                 }
 
                 @media only screen and (min-width: 36.25rem) and (max-width: 51.8rem) {

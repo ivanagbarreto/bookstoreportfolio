@@ -77,6 +77,12 @@ const ContainerBestSeller = () => {
    
   
       @media only screen and (max-width: 36.25rem) { 
+
+        h1{
+         padding-bottom: 10px;
+         padding-top: 0; 
+        margin-top: 0;
+        }
         div { 
           position: absolute;
           top: 100rem;
@@ -84,9 +90,10 @@ const ContainerBestSeller = () => {
          }
 
          figure {
+          padding-top: 0; 
           height: 95px;
           width: 200px;
-          padding:11px;
+          
           display: flex;
           flex-direction: column;
           text-transform: uppercase; }
@@ -96,10 +103,11 @@ const ContainerBestSeller = () => {
        }
 
        @media only screen and (min-width: 36.25rem) and (max-width:51.8rem) {
-        div { 
+        div {
+          
           flex-wrap:wrap;
           align-items:center;
-          height:700px;
+          
          }
    
   }

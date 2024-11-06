@@ -8,6 +8,7 @@ import GrayCard from "@/components/molecules/GrayCard";
 import WhiteCard from "@/components/molecules/WhiteCard"; 
 import Image from 'next/image'; // Importa el componente Image
 
+
 const ShoppingCart = () => {
     const [state, dispatch] = useReducer(cartReducer, cartInitialState);
     const { products, cart } = state;
@@ -35,8 +36,8 @@ const ShoppingCart = () => {
                             className="cartImage"
                             src="/carrito.b.png"
                             alt="Imagen del carrito"
-                            width={50} // Ajusta el tamaño según sea necesario
-                            height={50} // Ajusta el tamaño según sea necesario
+                            width={50} 
+                            height={50} 
                         />
                         <div className="dropdown-content">
                             <div className="acumuladorContainer">

@@ -1,5 +1,5 @@
 
-import ButtonProd from "@/components/atoms/Boton-VerProd";
+import ButtonProd from "@/components/atoms/Boton-VerProd"
 
 const WhiteCard = () => {
   return (
@@ -8,7 +8,9 @@ const WhiteCard = () => {
         <figcaption>
           <h1 id="clasicos">Clásicos</h1>
         </figcaption>
+        <div className="buttonContainer">
         <ButtonProd />
+        </div>
       </figure>
       <style jsx>{`
         figure {
@@ -18,7 +20,8 @@ const WhiteCard = () => {
           display: flex;
           flex-direction: column;
           text-transform: uppercase;
-          margin-left:  20px
+          margin-left:  20px;
+          
          
         }
         h1 {
@@ -29,7 +32,14 @@ const WhiteCard = () => {
         @media only screen and (max-width: 36.25rem) {
           figure {margin-left: 1rem; 
             padding-right: 2.5rem; 
-            padding-top: 5rem;
+            padding-bottom: -200px;
+            
+          }
+             h1 {
+            display: none; /* Ocultar título y botón en móvil */
+          }
+            .buttonContainer {
+            display: none; /* Ocultar título y botón en móvil */
           }
          
         }

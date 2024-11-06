@@ -10,7 +10,10 @@ const GrayCard = () => {
             <h1 id="ficcion">Ficción</h1>
            
          </figcaption>
+
+         <div className="buttonContainer">
          <ButtonProd />
+         </div>
        </figure>
        <style jsx >{`
               figure {
@@ -29,6 +32,12 @@ const GrayCard = () => {
             @media only screen and (max-width: 36.25rem) {
               figure {margin-left:1rem;
               padding-right:4rem}
+               
+              h1{
+              margin-bottom: 2rem;
+              text-align:center;
+              }
+          
              
             }
        `}</style>

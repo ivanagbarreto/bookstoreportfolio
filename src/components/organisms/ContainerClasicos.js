@@ -1,5 +1,5 @@
 import Card from "@/components/molecules/BasicCard";
-import WhiteCard from "@/components/molecules/WhiteCard";
+import WhiteCard from "@/components/molecules/WhiteCard "; 
 
 const Proplibros = [
   {
@@ -25,34 +25,39 @@ const Proplibros = [
 const ContainerClasicos = () => {
   return (
     <>
-      <div className="container">
-        <WhiteCard />
+      <div className="container2">
+      <WhiteCard />
         {Proplibros.map((propLibro) => (
           <Card key={propLibro.id} data={propLibro} />
         ))}
       </div>
 
       <style jsx>{`
-        .container {
+       .container2{
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
           align-content: center;
-          background-color: white;
-          height: 100vh;
-          width: 100vw;
+          background-color: #f7f7f7;
+          min-height:400px;
+          width: 100%;
           align-items: center;
+          
         }
+     
+         @media only screen and (max-width: 36.25rem) {
+          .container2 {
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            align-items: center;
+          }
 
-        @media only screen and (max-width: 36.25rem) {
-          .container {
-            flex-direction: column;
-            align-items: center; /* Alinea los elementos en el centro */
-          }
-          .container > :global(Card) {
-            margin-bottom: 20px; /* Espaciado entre las tarjetas */
+          /* Ajustes adicionales para que las tarjetas ocupen todo el ancho en móviles */
+          .container2 > :global(*) {
+            width: 90%; /* Ajusta el ancho de cada tarjeta en la vista móvil */
+            margin-bottom: 1rem;
           }
         }
+        
       `}</style>
     </>
   );

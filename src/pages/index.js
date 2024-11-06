@@ -10,6 +10,7 @@ import ContainerBestSeller from "@/components/organisms/ContainerBestSeller"
 import ShoppingCart from "@/components/organisms/ShoppingCart"
 
 
+
 const index = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const index = () => {
       <CardscontainerInfo/>
       <ContainerBestSeller/>
       <ShoppingCart/>
-      
+     
      < Footer/>
    
 
