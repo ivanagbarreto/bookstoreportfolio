@@ -49,11 +49,12 @@ const ContainerBestSeller = () => {
        h1{
         text-align:center;
         margin-right: 6rem; 
-        color: #317577
+        color: #317577;
+        font-weight:bold;
     }
 
         figure {
-         height: 290px;
+         height: 280px;
          width: 210px;
          background-color: white;
          padding:15px;
@@ -82,10 +83,11 @@ const ContainerBestSeller = () => {
          padding-bottom: 10px;
          padding-top: 0; 
         margin-top: 0;
+        font-weight:bold;
         }
         div { 
           position: absolute;
-          top: 100rem;
+          top: 95rem;
           margin-top: 100px;
          }
 

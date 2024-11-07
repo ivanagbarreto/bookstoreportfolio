@@ -27,12 +27,14 @@ const WhiteCard = () => {
         h1 {
           text-align: center;
           color: #6e6e6e;
+          margin-bottom:2rem;
+              
         }
 
         @media only screen and (max-width: 36.25rem) {
           figure {margin-left: 1rem; 
             padding-right: 2.5rem; 
-            padding-bottom: -200px;
+            
             
           }
              h1 {

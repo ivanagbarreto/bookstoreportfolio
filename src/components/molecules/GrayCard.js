@@ -27,6 +27,8 @@ const GrayCard = () => {
             h1{
               text-align:center;
               color: #6e6e6e;
+              margin-bottom:2rem;
+              
             }
 
             @media only screen and (max-width: 36.25rem) {
@@ -36,6 +38,8 @@ const GrayCard = () => {
               h1{
               margin-bottom: 2rem;
               text-align:center;
+              margin-left:2.5rem;
+              font-weight:light;
               }
           
              

@@ -39,15 +39,7 @@ const closeSideBar=()=>{
           />
           </div>
         ) }
-        <div className="Buscador">
-    <input className="Barrabusqueda"/>
-    <Image
-      src="/lupa.png"
-      width={20}
-      height={20}
-      alt="Logo Books"
-      />
-    </div>
+       
       </div>
     
  
