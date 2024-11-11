@@ -28,7 +28,7 @@ const CartItems = ({item, deleteFromCart}) => {
             text-align: center;
             border-radius: 10px;
             box-shadow: 3px 3px 1px grey
-            margin-bottom: 10px;
+            
       }
       figure:hover { transform: scale(1.1)}
 }

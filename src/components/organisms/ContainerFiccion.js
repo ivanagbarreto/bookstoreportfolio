@@ -46,6 +46,8 @@ const ContainerFiccion = () => {
           align-items: center;
            
         }
+             
+
       `}</style>
     </>
   );

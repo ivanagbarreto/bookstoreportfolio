@@ -10,8 +10,8 @@ const Cards = ({ infocliente }) => {
           className="imagenInfo"
           src={img}
           alt={title}
-          width={100}  // Ajusta el ancho según tus necesidades
-          height={100} // Ajusta el alto según tus necesidades
+          width={100}  
+          height={100} 
         />
         <div>
           <figcaption>

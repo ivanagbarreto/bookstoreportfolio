@@ -25,7 +25,7 @@ const Proplibros = [
 const ContainerClasicos = () => {
   return (
     <>
-      <div className="container2">
+      <div className="container">
       <WhiteCard />
         {Proplibros.map((propLibro) => (
           <Card key={propLibro.id} data={propLibro} />
@@ -33,7 +33,7 @@ const ContainerClasicos = () => {
       </div>
 
       <style jsx>{`
-       .container2{
+       .container{
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
@@ -46,13 +46,13 @@ const ContainerClasicos = () => {
         }
      
          @media only screen and (max-width: 36.25rem) {
-          .container2 {
+          .container {
             flex-direction: column; /* Cambia a columna en pantallas pequeñas */
             align-items: center;
           }
 
           /* Ajustes adicionales para que las tarjetas ocupen todo el ancho en móviles */
-          .container2 > :global(*) {
+          .container > :global(*) {
             width: 90%; /* Ajusta el ancho de cada tarjeta en la vista móvil */
             margin-bottom: 1rem;
           }
