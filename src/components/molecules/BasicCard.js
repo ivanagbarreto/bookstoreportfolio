@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const BasicCard = ({ data, addToCart }) => {
   const { img, title, price, id, autor } = data;
@@ -6,7 +6,14 @@ const BasicCard = ({ data, addToCart }) => {
   return (
     <>
       <figure>
-        <Image src={img} alt={title} width={220} height={320} layout="responsive" style={{ marginBottom: "30px" }}/>
+        <Image
+          src={img}
+          alt={title}
+          width={220}
+          height={320}
+          layout="responsive"
+          style={{ marginBottom: "30px" }}
+        />
         <figcaption>
           <h3>{title}</h3>
           <p>{autor}</p>
@@ -56,5 +63,3 @@ const BasicCard = ({ data, addToCart }) => {
 };
 
 export default BasicCard;
-
-

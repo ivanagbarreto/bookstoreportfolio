@@ -1,20 +1,26 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-const BestSellCard = ({data}) => {
-    const {id, img, title, price} = data;
+const BestSellCard = ({ data }) => {
+  const { id, img, title, price } = data;
 
-    return (
-        <>
-            <figure>
-                <Image src={img} alt={title} width={110} height={180} style={{ marginTop: '10px' }}/>
-                <figcaption>
-                    <h3> # {id}</h3>
-                    <h3>{title}</h3>
-                    <p>{price}</p>
-                </figcaption>
-            </figure>
+  return (
+    <>
+      <figure>
+        <Image
+          src={img}
+          alt={title}
+          width={110}
+          height={180}
+          style={{ marginTop: "10px" }}
+        />
+        <figcaption>
+          <h3> # {id}</h3>
+          <h3>{title}</h3>
+          <p>{price}</p>
+        </figcaption>
+      </figure>
 
-            <style jsx>{`
+      <style jsx>{`
                 figure {
                  padding-top:0;
                     height: 290px;
@@ -74,8 +80,8 @@ const BestSellCard = ({data}) => {
                     }
                 }
             `}</style>
-        </>
-    );
+    </>
+  );
 };
 
 export default BestSellCard;

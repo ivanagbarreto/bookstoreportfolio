@@ -1,11 +1,7 @@
-
-
 const Button = () => {
-
-
   return (
     <>
-      <button >Comprar</button>
+      <button>Comprar</button>
 
       <style>{`
             button {

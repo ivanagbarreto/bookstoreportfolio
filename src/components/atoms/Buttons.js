@@ -5,7 +5,6 @@ const Buttons = () => {
 
       <style jsx>{`
        button {
-          
           background-color: #319FA5;
           color: white;
           border: none;
@@ -19,4 +18,4 @@ const Buttons = () => {
   );
 };
 
-export default Buttons; 
+export default Buttons;

@@ -1,13 +1,8 @@
-
-
-
-
-
 const ButtonProd = () => {
-    return (
-      <>
+  return (
+    <>
       <button>Ver Productos</button>
-   
+
       <style>{`
              button {
              width: 210px;
@@ -29,8 +24,8 @@ const ButtonProd = () => {
          }
    
        `}</style>
-      </>
-    )
-  }
-  
-  export default ButtonProd
+    </>
+  );
+};
+
+export default ButtonProd;

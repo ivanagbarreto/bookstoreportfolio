@@ -1,51 +1,41 @@
-
-
-
 import BestSellCard from "@/components/molecules/BestSellCard";
 
-
 const Proplibros = [
-    {
-      id: 1,
-      img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1694055927i/195714366.jpg",
-      title: "El vuelo de la libélula",
-      price: " Gabriela Exilart , 14.670$",
-    },
-    {
-      id: 2,
-      img: "https://www.penguinlibros.com/ar/2874610-thickbox_default/las-indignas.jpg",
-      title: "Las Indignas",
-      price: " Agustina Bazterrica, 16.130$",
-    },
-    {
-      id: 3,
-      img: "https://www.tematika.com/media/catalog/Ilhsa/Imagenes/706213.jpg",
-      title: "Nosotros en la tormenta ",
-      price: "Eduardo Sacheri, 9.770$",
-    },
-  ];
+  {
+    id: 1,
+    img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1694055927i/195714366.jpg",
+    title: "El vuelo de la libélula",
+    price: " Gabriela Exilart , 14.670$",
+  },
+  {
+    id: 2,
+    img: "https://www.penguinlibros.com/ar/2874610-thickbox_default/las-indignas.jpg",
+    title: "Las Indignas",
+    price: " Agustina Bazterrica, 16.130$",
+  },
+  {
+    id: 3,
+    img: "https://www.tematika.com/media/catalog/Ilhsa/Imagenes/706213.jpg",
+    title: "Nosotros en la tormenta ",
+    price: "Eduardo Sacheri, 9.770$",
+  },
+];
 
 const ContainerBestSeller = () => {
   return (
     <>
-    <div id="containerBestseller">
-
-    <figure >
-         <figcaption> 
-          
+      <div id="containerBestseller">
+        <figure>
+          <figcaption>
             <h1 id="best-seller">Best Sellers</h1>
-            
-         </figcaption>
-       </figure>
-      {Proplibros.map((Proplibros) => (
-        <BestSellCard key={Proplibros.id} data={Proplibros} />
-      ))}
-      
-    </div>
+          </figcaption>
+        </figure>
+        {Proplibros.map((Proplibros) => (
+          <BestSellCard key={Proplibros.id} data={Proplibros} />
+        ))}
+      </div>
 
-    
-
-    <style jsx>{`
+      <style jsx>{`
        h1{
         text-align:center;
         margin-right: 6rem; 
@@ -70,13 +60,9 @@ const ContainerBestSeller = () => {
         background-color: white;
         height:700px;
         width: 100vw;
-        align-items: center;
-        
+        align-items: center; 
         
       }
-      
-   
-  
       @media only screen and (max-width: 36.25rem) { 
 
         h1{
@@ -114,9 +100,9 @@ const ContainerBestSeller = () => {
    
   }
 
-    `}</style> 
-  </>
-  )
-}
+    `}</style>
+    </>
+  );
+};
 
-export default ContainerBestSeller
+export default ContainerBestSeller;

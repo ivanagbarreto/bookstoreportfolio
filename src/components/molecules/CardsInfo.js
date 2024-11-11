@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Cards = ({ infocliente }) => {
   const { img, title, text } = infocliente;
@@ -6,12 +6,12 @@ const Cards = ({ infocliente }) => {
   return (
     <>
       <figure className="cardsInfo">
-        <Image 
+        <Image
           className="imagenInfo"
           src={img}
           alt={title}
-          width={100}  
-          height={100} 
+          width={100}
+          height={100}
         />
         <div>
           <figcaption>
@@ -27,8 +27,8 @@ const Cards = ({ infocliente }) => {
             border: none;
             display: flex;
             flex-direction: row;
-            justify-content: center; 
-            align-items: center; 
+            justify-content: center;
+            align-items: center;
           }
           .imagenInfo {
             max-width: 40%;
@@ -39,16 +39,16 @@ const Cards = ({ infocliente }) => {
           h3 {
             margin: 20px 0px 0px 0px;
             line-height: 50px;
-            color: #A7A7A7;
+            color: #a7a7a7;
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 2.5px;
-            align-self: center; 
+            align-self: center;
           }
           p {
             display: flex;
             flex-direction: column;
-            color: #A7A7A7;
+            color: #a7a7a7;
             font-size: 13px;
             letter-spacing: 1px;
             text-align: center;

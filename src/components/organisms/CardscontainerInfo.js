@@ -55,7 +55,9 @@ const CardscontainerInfo = () => {
 
           /* Mover solo la tercera tarjeta hacia la izquierda en vista móvil */
           .move-left-mobile {
-            transform: translateX(-45px); /* Ajusta este valor según el desplazamiento que desees */
+            transform: translateX(
+              -45px
+            ); /* Ajusta este valor según el desplazamiento que desees */
           }
         }
       `}</style>
